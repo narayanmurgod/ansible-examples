@@ -1,0 +1,10 @@
+---
+- name: "This playbook creates the new user"
+  become: true
+  hosts: localhost
+  tasks:
+    - name: Create user Shahi
+      user:
+        name: Shahi
+        state: present
+
